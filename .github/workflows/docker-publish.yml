@@ -9,11 +9,11 @@ on:
   schedule:
     - cron: '36 16 * * *'
   push:
-    branches: [ main ]
+    branches: [ mnt ]
     # Publish version tags as releases.
     tags: [ 'v*.*' ]
   pull_request:
-    branches: [ main ]
+    branches: [ mnt ]
 
 env:
   # Use docker.io for Docker Hub if empty
